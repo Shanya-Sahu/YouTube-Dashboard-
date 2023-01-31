@@ -38,8 +38,20 @@
     z-index: 100;
 }
 
+.tab-option .nav-item a{
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.tab-option .nav-item:hover a{
+    background-color: #222222 !important;
+}
+.card-img-top img{
+    object-fit: contain;
+}
+
 @media screen and (max-width:1500px){
-    iframe{
+   .card-img-top img , iframe{
         width: 300px !important;
         height: 250px !important;
     }
@@ -49,9 +61,13 @@
         position: static !important;
         top: 0 !important;
     }
-    iframe{
+   .card-img-top img{
         width: 200px !important;
         height: 150px !important;
+    }
+    .video-player-section iframe , .video-player-section .card-img-top img{
+        width: 650px !important;
+        height: 550px !important;
     }
     .main-navlist{
         margin-top: 50px;
@@ -59,16 +75,19 @@
 }
 
 @media screen and (max-width:500px) {
-    iframe{
+   .card-img-top img , .video-player-section iframe , .video-player-section .card-img-top img{
         width: 350px !important;
         height: 250px !important;
     }
     #mainContent{
         margin-top: 100px !important;
     }
+    .video-player-section{
+        margin-top: 150px !important;
+    }
 }
 @media screen and (max-width:380px) {
-    iframe{
+   .card-img-top img , .video-player-section iframe , .video-player-section .card-img-top img{
         width: 300px !important;
         height: 150px !important;
     }
